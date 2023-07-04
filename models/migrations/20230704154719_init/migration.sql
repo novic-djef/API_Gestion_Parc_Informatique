@@ -40,10 +40,9 @@ CREATE TABLE "Categorie" (
 CREATE TABLE "Materiel" (
     "id" SERIAL NOT NULL,
     "nom" TEXT NOT NULL,
-    "numero" TEXT NOT NULL,
+    "marque" TEXT NOT NULL,
     "image" TEXT NOT NULL,
-    "date_achat" TIMESTAMP(3) NOT NULL,
-    "date_expiration" TIMESTAMP(3) NOT NULL,
+    "quantite" INTEGER NOT NULL,
     "createdAt" TIMESTAMP(3) DEFAULT CURRENT_TIMESTAMP,
     "updateAt" TIMESTAMP(3),
 
@@ -54,9 +53,9 @@ CREATE TABLE "Materiel" (
 CREATE TABLE "Logiciel" (
     "id" SERIAL NOT NULL,
     "nom" TEXT NOT NULL,
-    "date" TEXT NOT NULL,
     "version" TEXT NOT NULL,
     "image" TEXT NOT NULL,
+    "licence" INTEGER NOT NULL,
     "createdAt" TIMESTAMP(3) DEFAULT CURRENT_TIMESTAMP,
     "updateAt" TIMESTAMP(3),
 

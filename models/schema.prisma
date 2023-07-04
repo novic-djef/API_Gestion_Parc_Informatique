@@ -120,5 +120,22 @@ model Technicien{
     updateAt DateTime? @updatedAt
 }
 
+model Fournisseur{
+    id Int @id @default(autoincrement())
+    nom String
+    email String
+    phone String
+    createdAt DateTime? @default(now())
+    updateAt DateTime? @updatedAt
+}
+
+model Commentaire{
+    id Int @id @default(autoincrement())
+    nom String
+    message String
+    createdAt DateTime? @default(now())
+    updateAt DateTime? @updatedAt
+}
+
 
 
